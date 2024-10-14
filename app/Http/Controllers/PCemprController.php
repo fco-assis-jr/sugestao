@@ -16,7 +16,7 @@ class PCemprController extends Controller
     public function ValidarLogin(Request $request)
     {
 
-        $username = strtoupper($request->input('username'));
+        $username = strtoupper($request->input('nome'));
         $password = strtoupper($request->input('password'));
 
         $user = PCempr::where('usuariobd', $username)
